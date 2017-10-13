@@ -9,7 +9,7 @@
     2007-02-01 through 2007-02-02.
   - Adds a `datetime` variable to the dataset by combining `Date` and `Time` variables.
   - Saves this final resulting household power dataset in a variable named `hhpd`
-  - Each plot script then uses `source('load-data.R)` to get the dataset loaded for use.
+  - Each plot script then uses `source('load-data.R')` to get the dataset loaded for use.
 - Four plotting scripts
   - [plot1.R](plot1.R) 
   - [plot2.R](plot2.R) 
@@ -21,14 +21,17 @@
   - [plot3.png](plot3.png) 
   - [plot4.png](plot4.png) 
 
-## Side by Side Comparison of Original Repo to Project Result
-| original                                      | my version                     |
-| :-------------------------------------------: | :----------------------------: |
-| ![](figure/unnamed-chunk-2.png) <br /> plot 1 | ![](./plot1.png) <br /> plot 1 |
-| ![](figure/unnamed-chunk-3.png) <br /> plot 2 | ![](./plot2.png) <br /> plot 2 |
-| ![](figure/unnamed-chunk-4.png) <br /> plot 3 | ![](./plot3.png) <br /> plot 3 |
-| ![](figure/unnamed-chunk-5.png) <br /> plot 4 | ![](./plot4.png) <br /> plot 4 |
+## Running the project
+Simply clone this repository and from the project folder use `source('plot1.R')` for each script
+to generate the resulting PNG files.
 
+## Side by Side Comparison of Original Repo to Project Result
+| plots from forked repo                                          |  my project's result                           |
+| :-------------------------------------------------------------: | :--------------------------------------------: |
+| ![](figure/unnamed-chunk-2.png) <br /> plot 1 from forked repo  | ![](./plot1.png) <br /> plot 1 from my project |
+| ![](figure/unnamed-chunk-3.png) <br /> plot 2 from forked repo  | ![](./plot2.png) <br /> plot 2 from my project |
+| ![](figure/unnamed-chunk-4.png) <br /> plot 3 from forked repo  | ![](./plot3.png) <br /> plot 3 from my project |
+| ![](figure/unnamed-chunk-5.png) <br /> plot 4 from forked repo  | ![](./plot4.png) <br /> plot 4 from my project |
 
 <hr>
 
