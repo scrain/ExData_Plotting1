@@ -6,7 +6,8 @@ with(
   hhpc,
   plot(datetime, Sub_metering_1,
        type='l',
-       ylab='Energy sub metering')
+       ylab='Energy sub metering',
+       xlab='') # cleared xlab to better match what was shown in the instructions
 )
 
 with(
@@ -24,7 +25,7 @@ with(
 )
 
 legend(
-  'topright', 
+  'topright',
   col=c('black', 'red', 'blue'),
   lty=1,
   legend=c('Sub_metering_1', 'Sub_metering_2', 'Sub_metering_3')

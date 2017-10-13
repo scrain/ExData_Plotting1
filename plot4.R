@@ -6,19 +6,19 @@ par(mfrow=c(2,2))
 
 # upper left plot
 with(
-  hhpc, 
-  plot(datetime, 
-       Global_active_power, 
-       type='l', 
-       xlab='',
-       ylab='Global Active Power (kilowatts)')
+  hhpc,
+  plot(datetime,
+       Global_active_power,
+       type='l',
+       ylab='Global Active Power (kilowatts)',
+       xlab='') # cleared xlab to better match what was shown in the instructions
 )
 
 # upper right plot
 with(
-  hhpc, 
-  plot(datetime, 
-       Voltage, 
+  hhpc,
+  plot(datetime,
+       Voltage,
        type='l')
 )
 
@@ -27,7 +27,8 @@ with(
   hhpc,
   plot(datetime, Sub_metering_1,
        type='l',
-       ylab='Energy sub metering')
+       ylab='Energy sub metering',
+       xlab='') # cleared xlab to better match what was shown in the instructions?
 )
 
 with(
@@ -45,17 +46,18 @@ with(
 )
 
 legend(
-  'topright', 
+  'topright',
   col=c('black', 'red', 'blue'),
   lty=1,
+  bty='n', # remove border around legend
   legend=c('Sub_metering_1', 'Sub_metering_2', 'Sub_metering_3')
 )
 
 # lower right plot
 with(
-  hhpc, 
-  plot(datetime, 
-       Global_reactive_power, 
+  hhpc,
+  plot(datetime,
+       Global_reactive_power,
        type='l')
 )
 
