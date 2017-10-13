@@ -1,6 +1,6 @@
 source('load-data.R')
 
-png(filename = "plot2.png", width = 480, height = 480)
+png(filename = "plot2.png", bg = 'transparent', width = 480, height = 480)
 
 with(
   hhpc,

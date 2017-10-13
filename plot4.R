@@ -1,6 +1,6 @@
 source('load-data.R')
 
-png(filename = "plot4.png", width = 480, height = 480)
+png(filename = "plot4.png", bg = 'transparent', width = 480, height = 480)
 
 par(mfrow=c(2,2))
 
