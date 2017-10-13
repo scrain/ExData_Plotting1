@@ -1,3 +1,39 @@
+
+# Exploratory Data Analysis Course Project 1
+
+## Project Files
+- [load-data.R](load-data.R)  This R script downloads and prepared a dataset for the other plotting scripts by doing the following:
+  - Downloading and unzipping the file located at [https://d396qusza40orc.cloudfront.net/exdata%2Fdata%2Fhousehold_power_consumption.zip](https://d396qusza40orc.cloudfront.net/exdata%2Fdata%2Fhousehold_power_consumption.zip)
+  - Reading the file `household_power_consumption.txt` into a data.table 
+  - Cleans up the `Date` variable and takes a subset of the data for dates in the range 
+    2007-02-01 through 2007-02-02.
+  - Adds a `datetime` variable to the dataset by combining `Date` and `Time` variables.
+  - Saves this final resulting household power dataset in a variable named `hhpd`
+  - Each plot script then uses `source('load-data.R)` to get the dataset loaded for use.
+- Four plotting scripts
+  - [plot1.R](plot1.R) 
+  - [plot2.R](plot2.R) 
+  - [plot3.R](plot3.R) 
+  - [plot4.R](plot4.R) 
+- Four resulting plots in PNG form
+  - [plot1.png](plot1.png) 
+  - [plot2.png](plot2.png) 
+  - [plot3.png](plot3.png) 
+  - [plot4.png](plot4.png) 
+
+## Side by Side Comparison of Original Repo to Project Result
+| original                                      | my version                     |
+| :-------------------------------------------: | :----------------------------: |
+| ![](figure/unnamed-chunk-2.png) <br /> plot 1 | ![](./plot1.png) <br /> plot 1 |
+| ![](figure/unnamed-chunk-3.png) <br /> plot 2 | ![](./plot2.png) <br /> plot 2 |
+| ![](figure/unnamed-chunk-4.png) <br /> plot 3 | ![](./plot3.png) <br /> plot 3 |
+| ![](figure/unnamed-chunk-5.png) <br /> plot 4 | ![](./plot4.png) <br /> plot 4 |
+
+
+<hr>
+
+# Orignal Repo Readme
+
 ## Introduction
 
 This assignment uses data from
@@ -89,26 +125,25 @@ GitHub so that the GitHub version of your repository is up to
 date. There should be four PNG files and four R code files.
 
 
-The four plots that you will need to construct are shown below. 
+The four plots that you will need to construct are shown below.
 
 
 ### Plot 1
 
 
-![plot of chunk unnamed-chunk-2](figure/unnamed-chunk-2.png) 
+![plot of chunk unnamed-chunk-2](figure/unnamed-chunk-2.png)
 
 
 ### Plot 2
 
-![plot of chunk unnamed-chunk-3](figure/unnamed-chunk-3.png) 
+![plot of chunk unnamed-chunk-3](figure/unnamed-chunk-3.png)
 
 
 ### Plot 3
 
-![plot of chunk unnamed-chunk-4](figure/unnamed-chunk-4.png) 
+![plot of chunk unnamed-chunk-4](figure/unnamed-chunk-4.png)
 
 
 ### Plot 4
 
-![plot of chunk unnamed-chunk-5](figure/unnamed-chunk-5.png) 
-
+![plot of chunk unnamed-chunk-5](figure/unnamed-chunk-5.png)
